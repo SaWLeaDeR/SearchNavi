@@ -1,0 +1,144 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>searchNavi</title>
+        <!-- Bootstrap core CSS -->
+        <link href={% static "css/bootstrap.css" %} rel="stylesheet">
+        <!-- Fontawesome core CSS -->
+        <link href={% static "css/font-awesome.min.css" %} rel="stylesheet" />
+        <!--GOOGLE FONT -->
+        <link href={% static 'http://fonts.googleapis.com/css?family=Open+Sans' %} rel='stylesheet' type='text/css'>
+        <!--Slide Show Css -->
+        <link href={% static "css/main-style.css" %} rel="stylesheet" />
+        <!-- custom CSS here -->
+        <link href={% static "css/style.css" %} rel="stylesheet" />
+
+
+</head>
+<body>
+<div class="post-meta">  
+    <p>    <small>About 2,003 results found in 0.45 seconds</small>  
+    </p>
+</div>
+
+<div class="post">  
+    <h3><i class="fa fa-heart"></i> <a href="#">Page name goes here</a></h3> 
+     <p><small>http://bootstrapwiki.com/path/to/page/here</small></p>  
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat sit amet sapien nec tristique. Morbi vitae odio mi. Praesent vitae diam ac libero tristique viverra. <a href="#">More</a>
+    </p>
+</div>
+
+<%- partial("partial/_sidebar-search") %>
+
+<div class="col-lg-4">  
+    <div class="sidebar">    
+        <h5>Related Searches</h5>    
+        <ul class="list-unstyled">      
+            <li><a href="#"><strong>Keyword</strong> something</a></li>      
+            <li><a href="#"><strong>Keyword</strong> something else</a></li>      
+            <li><a href="#"><strong>Keyword</strong> maybe this</a></li>    
+        </ul>    
+        <hr>    
+        <h5>Related Tags</h5>    
+        <ul class="list-unstyled">      
+            <li><a href="#">Tag 01</a></li>      
+            <li><a href="#">Tag 02</a></li>      
+            <li><a href="#">Tag 03</a></li>      
+            <li><a href="#">Tag 04</a></li>      
+            <li><a href="#">Tag 05</a></li>    
+        </ul>    
+        <hr>    
+        <h5>Related Topics</h5>    
+        <ul class="list-unstyled">      
+            <li><a href="#">Topic 01</a></li>      
+            <li><a href="#">Topic 02</a></li>      
+            <li><a href="#">Topic 03</a></li>      
+            <li><a href="#">Topic 04</a></li>      
+            <li><a href="#">Topic 05</a></li>    
+        </ul>  
+    </div>
+</div>
+
+.sidebar hr {
+    border-color: @bw-light-grey;
+  }
+
+  <div class="container">  
+      <div class="page-title">    
+          <div class="row">      
+              <div class="col-lg-6">        
+                  <h1>Search Results</h1>      
+                </div>      
+                <div class="col-lg-6 add-content">        
+                    <ul class="list-inline pull-right">          
+                        <li>            
+                            <button type="button" class="btn btn-primary">+ Add Content</button>          
+                        </li>        
+                    </ul>      
+                </div>    
+            </div>  
+        </div>  
+        <div class="page-content">    
+            <div class="row">      
+                <div class="col-lg-8">        
+                    <div class="feed">          
+                        <div class="post-meta">            
+                            <p>              
+                                <small>About 2,003 results found in 0.45 seconds</small>            
+                            </p>          
+                        </div>          
+                        <div class="post">            
+                            <h3><i class="fa fa-heart"></i> <a href="#">Page name goes here</a></h3>            
+                            <p><small>http://bootstrapwiki.com/path/to/page/here</small></p>            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat sit amet sapien nec tristique. Morbi vitae odio mi. Praesent vitae diam ac libero tristique viverra. <a href="#">More</a></p>          
+                        </div>          
+                        <div class="post">            
+                            <h3><i class="fa fa-heart"></i> <a href="#">Page name goes here</a></h3>  
+                            <p><small>http://bootstrapwiki.com/path/to/page/here</small></p>            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat sit amet sapien nec tristique. Morbi vitae odio mi. Praesent vitae diam ac libero tristique viverra. <a href="#">More</a></p>          
+                        </div>          
+                        <div class="post">            
+                            <h3><i class="fa fa-heart"></i> <a href="#">Page name goes here</a></h3>            
+                            <p><small>http://bootstrapwiki.com/path/to/page/here</small></p>            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat sit amet sapien nec tristique. Morbi vitae odio mi. Praesent vitae diam ac libero tristique viverra. <a href="#">More</a></p>          
+                        </div>          
+                        <div class="post">            
+                            <h3><i class="fa fa-heart"></i> <a href="#">Page name goes here</a></h3>            
+                            <p><small>http://bootstrapwiki.com/path/to/page/here</small></p>            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat sit amet sapien nec tristique. Morbi vitae odio mi. Praesent vitae diam ac libero tristique viverra. <a href="#">More</a></p>          
+                        </div>          
+                        <div class="post">            
+                            <h3><i class="fa fa-heart"></i> <a href="#">Page name goes here</a></h3><p><small>http://bootstrapwiki.com/path/to/page/here</small></p>            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat sit amet sapien nec tristique. Morbi vitae odio mi. Praesent vitae diam ac libero tristique viverra. <a href="#">More</a></p>          
+                        </div>          
+                        <div class="post">            
+                            <h3><i class="fa fa-heart"></i> <a href="#">Page name goes here</a></h3><p><small>http://bootstrapwiki.com/path/to/page/here</small></p>            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat sit amet sapien nec tristique. Morbi vitae odio mi. Praesent vitae diam ac libero tristique viverra. <a href="#">More</a></p>          
+                        </div>          
+                        <div class="post">            
+                            <h3><i class="fa fa-heart"></i> <a href="#">Page name goes here</a></h3><p><small>http://bootstrapwiki.com/path/to/page/here</small></p>            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat sit amet sapien nec tristique. Morbi vitae odio mi. Praesent vitae diam ac libero tristique viverra. <a href="#">More</a></p>          
+                        </div>          
+                        <div class="post">            
+                            <h3><i class="fa fa-heart"></i> <a href="#">Page name goes here</a></h3>            
+                            <p><small>http://bootstrapwiki.com/path/to/page/here</small></p>            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat sit amet sapien nec tristique. Morbi vitae odio mi. Praesent vitae diam ac libero tristique viverra. <a href="#">More</a></p>          
+                        </div>          
+                        <div class="post">            
+                            <h3><i class="fa fa-heart"></i> <a href="#">Page name goes here</a></h3><p><small>http://bootstrapwiki.com/path/to/page/here</small></p>            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat sit amet sapien nec tristique. Morbi vitae odio mi. Praesent vitae diam ac libero tristique viverra. <a href="#">More</a></p>          
+                        </div>          
+                        <div class="feed-pagination">            
+                            <button class="btn btn-primary" type="button">Next Page</button>          
+                        </div>        
+                    </div><!-- feed end //-->      
+                </div>      <!-- sidebar //-->      <%- partial("partial/_sidebar-search") %>    </div>  
+            </div>
+        </div>
+    </body>
+    </html>

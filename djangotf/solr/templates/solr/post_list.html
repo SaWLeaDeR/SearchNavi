@@ -1,0 +1,526 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Feal Meal</title>
+    <!-- Bootstrap core CSS -->
+    <link href={% static "css/bootstrap.css" %} rel="stylesheet">
+    <!-- Fontawesome core CSS -->
+    <link href={% static "css/font-awesome.min.css" %} rel="stylesheet" />
+    <!--GOOGLE FONT -->
+    <link href={% static 'http://fonts.googleapis.com/css?family=Open+Sans' %} rel='stylesheet' type='text/css'>
+    <!--Slide Show Css -->
+    <link href={% static "css/main-style.css" %} rel="stylesheet" />
+    <!-- custom CSS here -->
+    <link href={% static "css/style.css" %} rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Feal Meal</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Sepetim</a></li>
+                    <li><a href="#">Giriş</a></li>
+                    <li><a href="#">Kayıt Ol</a></li>
+                        
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" placeholder="Aramak istediğiniz yemek ..." class="form-control">
+                    </div>
+                    &nbsp; 
+                    <button type="submit" class="btn btn-primary">Ara</button>
+                </form>
+            </div>
+            <!-- /.navbar-collapse -->
+        <!-- /.container-fluid -->
+    
+                            
+                        </nav>
+                    </div>
+                    
+                </div>
+                <br />
+            </div>
+            
+        </div>
+        <!-- /.row -->
+        
+        
+        <div class="row">
+            <div class="col-md-3">
+                <div>
+                   <div>
+                    <a href="#" class="list-group-item active">Yemek Önerileri
+                    </a>
+                    <ul class="list-group">
+                        <li class="list-group-item">Ev yemeği
+                             <span class="label label-warning pull-right">1</span>
+                        </li>
+                        <li class="list-group-item">Fast Food
+                             <span class="label label-success pull-right">1</span>
+                        </li>
+                        <li class="list-group-item">Tatlı
+                             <span class="label label-info pull-right">1</span>
+                        </li>
+                    </ul>
+                </div>
+                    <a href="#" class="list-group-item active">Ev yemekleri
+                    </a>
+                    <ul class="list-group">
+
+                        <li class="list-group-item">Etli yemekler
+      <span class="label label-primary pull-right">234</span>
+                        </li>
+                        <li class="list-group-item">Hamur işi
+                      <span class="label label-success pull-right">34</span>
+                        </li>
+                        <li class="list-group-item">Çorbalar
+                         <span class="label label-danger pull-right">114</span>
+                        </li>
+                        <li class="list-group-item">Zeytinyağlılar
+                             <span class="label label-info pull-right">434</span>
+                        </li>
+                        <li class="list-group-item">Vejetaryen
+                             <span class="label label-success pull-right">34</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.div -->
+                
+                <!-- /.div -->
+                <div>
+                    <a href="#" class="list-group-item active">Fast Food'lar
+                    </a>
+                    <ul class="list-group">
+                        <li class="list-group-item">Hamburgerler
+                             <span class="label label-warning pull-right">305</span>
+                        </li>
+                        <li class="list-group-item">Sandviçler
+                             <span class="label label-success pull-right">340</span>
+                        </li>
+                        <li class="list-group-item">Pizzalar
+                             <span class="label label-info pull-right">735</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <a href="#" class="list-group-item active">Tatlılar
+                    </a>
+                    <ul class="list-group">
+                        <li class="list-group-item">Sütlü tatlılar
+                             <span class="label label-warning pull-right">456</span>
+                        </li>
+                        <li class="list-group-item">Şerbetli tatlılar
+                             <span class="label label-success pull-right">156</span>
+                        </li>
+                        <li class="list-group-item">Pastalar
+                             <span class="label label-info pull-right">400</span>
+                        </li>
+                        <li class="list-group-item">Kekler
+                             <span class="label label-primary pull-right">89</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                
+                
+
+
+                              
+              
+                   
+                    
+                    
+                <!-- /.div -->
+                </div>
+            <!-- /.col -->
+            
+            
+            <div class="col-md-9">
+                <div>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Yemek önerileri</a></li>
+                        <li class="active">Ev yemeği</li>
+                    </ol>
+                </div>
+           
+                
+                
+                <!-- /.div -->
+                
+                <div class="row">
+                    <div class="btn-group alg-right-pad">
+                        <button type="button" class="btn btn-default"><strong>1  </strong>farklı seçenek</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                Sırala &nbsp;
+      <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">By Price Low</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">By Price High</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">By Popularity</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">By Reviews</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- /.row -->
+                <div class="row">{% if numFound > 0 %}
+                {% for doc in docs %}
+                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                    
+                    
+                    
+                        <div class="thumbnail product-box">
+                            <img src="{% static "images/kremalimantarsote.jpg" %}" width="210px" height="210px" />
+                            <div class="caption">
+                                <h3><a href="#">{{ doc.Body }} </a></h3>
+                                <p>Fiyat : <strong>9 TL</strong>  </p>
+                                <p><a href="#" class="btn btn-success" role="button">Sepete Ekle</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                      {% else %}
+      <p>No result is available.</p>
+      {% endif %}
+            
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <ul class="pagination alg-right-pad">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+                <!-- /.row -->
+                <div>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Ev yemekleri</a></li>
+                        <li class="active">Etli yemekler</li>
+                    </ol>
+                </div>
+                <!-- /.div -->
+                <div class="row">
+                    <div class="btn-group alg-right-pad">
+                        <button type="button" class="btn btn-default"><strong>234  </strong>farklı seçenek</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Sırala &nbsp;
+      <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">By Price Low</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">By Price High</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">By Popularity</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">By Reviews</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                        <div class="thumbnail product-box">
+                            <img src="{% static "images/bahcivankebabi.jpg" %}" width="210px" height="210px" />
+                            <div class="caption">
+                                <h3><a href="#">Bahçivan Kebabı </a></h3>
+                                <p>Fiyat : <strong>24 TL</strong>  </p>
+                                <p>
+                                    <a href="#" class="btn btn-success" role="button">Sepete Ekle</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                        <div class="thumbnail product-box">
+                            <img src="{% static "images/guvectekofte.jpg" %}" width="210px" height="210px" />
+                            <div class="caption">
+                                <h3><a href="#">Güveçte Köfte </a></h3>
+                                <p>Fiyat : <strong>20 TL</strong>  </p>
+                                <p><a href="#" class="btn btn-success" role="button">Sepete Ekle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                        <div class="thumbnail product-box">
+                            <img src="{% static "images/etsote.jpg" %}" width="210px" height="210px" />
+                            <div class="caption">
+                                <h3><a href="#">Et sote </a></h3>
+                                <p>Fiyat : <strong>21 TL</strong>  </p>
+                                <p><a href="#" class="btn btn-success" role="button">Sepete Ekle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <ul class="pagination alg-right-pad">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Fast Food'lar</a></li>
+                        <li class="active">Hamburgerler</li>
+                    </ol>
+                </div>
+                <!-- /.div -->
+                <div class="row">
+                    <div class="btn-group alg-right-pad">
+                        <button type="button" class="btn btn-default"><strong>305  </strong>farklı seçenek</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Sırala &nbsp;
+      <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">By Price Low</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">By Price High</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">By Popularity</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">By Reviews</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                        <div class="thumbnail product-box">
+                            <img src="{% static "images/tavukburger.jpg" %}" width="210px" height="210px" />
+                            <div class="caption">
+                                <h3><a href="#">Tavuk Burger </a></h3>
+                                <p>Fiyat : <strong>9 TL</strong>  </p>
+                                <p>
+                                    <a href="#" class="btn btn-success" role="button">Sepete Ekle</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                        <div class="thumbnail product-box">
+                            <img src="{% static "images/miniburger.jpg" %}" width="210px" height="210px" />
+                            <div class="caption">
+                                <h3><a href="#">Mini Burger </a></h3>
+                                <p>Fiyat : <strong>13 TL</strong>  </p>
+                                <p><a href="#" class="btn btn-success" role="button">Sepete Ekle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                        <div class="thumbnail product-box">
+                            <img src="{% static "images/islakhamburger.jpg" %}" width="210px" height="210px" />
+                            <div class="caption">
+                                <h3><a href="#">Islak Hamburger </a></h3>
+                                <p>Fiyat : <strong>8 TL</strong>  </p>
+                                <p><a href="#" class="btn btn-success" role="button">Sepete Ekle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <ul class="pagination alg-right-pad">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                    </div>
+                    <div>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Tatlılar</a></li>
+                        <li class="active">Pastalar</li>
+                    </ol>
+                </div>
+                <!-- /.div -->
+                <div class="row">
+                    <div class="btn-group alg-right-pad">
+                        <button type="button" class="btn btn-default"><strong>400  </strong>farklı seçenek</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Sırala &nbsp;
+      <span class="caret"></span>
+                          
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                        <div class="thumbnail product-box">
+                            <img src="{% static "images/kostebekpasta.jpg" %}" width="210px" height="210px" />
+                            <div class="caption">
+                                <h3><a href="#">Köstebek pasta</a></h3>
+                                <p>Fiyat : <strong>11 TL</strong>  </p>
+                                <p>
+                                    <a href="#" class="btn btn-success" role="button">Sepete Ekle</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                        <div class="thumbnail product-box">
+                            <img src="{% static "images/yaspasta.jpg" %}" width="300px" height="300px" />
+                            <div class="caption">
+                                <h3><a href="#">Yaş pasta </a></h3>
+                                <p>Fiyat : <strong>7 TL</strong>  </p>
+                                <p><a href="#" class="btn btn-success" role="button">Sepete Ekle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                        <div class="thumbnail product-box">
+                            <img src="{% static "images/mozaikpasta.jpg" %}" width="220px" height="220px" />
+                            <div class="caption">
+                                <h3><a href="#">Mozaik pasta </a></h3>
+                                <p>Fiyat : <strong>13 TL</strong>  </p>
+                                <p><a href="#" class="btn btn-success" role="button">Sepete Ekle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <ul class="pagination alg-right-pad">
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                    </div>
+                <!-- /.row -->
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <div class="col-md-12 download-app-box text-center">
+
+        <span class="glyphicon glyphicon-download-alt"></span>Mobil uygulamamızı indirin harcamalarınız için %10 indirim kuponu kazanın.<a href="#" class="btn btn-danger btn-lg">Şimdi İndir</a>
+
+    </div>
+
+    <!--Footer -->
+    
+            <div class="col-md-4">
+                <strong>Önerileriniz için </strong>
+                <hr>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" required="required" placeholder="İsim">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" required="required" placeholder="Email adresi">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <textarea name="message" id="message" required="required" class="form-control" rows="3" placeholder="Mesajınız"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Gönder</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            
+            <div class="col-md-4 social-box">
+                <strong>Bizi takip edin</strong>
+                <hr>
+                <a href="#"><i class="fa fa-facebook-square fa-3x "></i></a>
+                <a href="#"><i class="fa fa-twitter-square fa-3x "></i></a>
+                
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- /.col -->
+    <div class="col-md-12 end-box ">
+        &copy; 2018 | &nbsp; www.fealmeal.com | &nbsp; Email : destek@fealmeal.com
+    </div>
+    <!-- /.col -->
+    <!--Footer end -->
+    <!--Core JavaScript file  -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!--bootstrap JavaScript file  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!--Slider JavaScript file  -->
+    <script src="assets/ItemSlider/js/modernizr.custom.63321.js"></script>
+    <script src="assets/ItemSlider/js/jquery.catslider.js"></script>
+    <script>
+        $(function () {
+
+            $('#mi-slider').catslider();
+
+        });
+		</script>
+</body>
+</html>

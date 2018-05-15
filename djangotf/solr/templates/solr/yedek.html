@@ -1,0 +1,123 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<style>
+  .vertical-menu {
+    width: 200px; /* Set a width if you like */
+    float: right;
+    padding-top: 140px;
+    padding-right: 100px
+    
+
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+</style>
+<head>
+  <title>{{ title }}</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    
+      <link rel="stylesheet" href="{% static 'css/result.css' %}" >
+   
+      <div class="vertical-menu">
+          <a href="#" class="active">Home</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div> 
+      
+      
+      
+</head>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.3.10/d3.min.js"></script>  
+ <!--<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+<body>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" id="firstNav">
+    <li class="nav-item">
+      <a href="//" class="nav-link active">SearchNavi</a>
+    </li>
+      <a href="#" class="nav-link disabled">SearchTree</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane fade in active" id="id1" role="tabpanel">Panel 1</div>
+    <div class="tab-pane fade" id="id2" role="tabpanel">Panel 2</div>
+    <div class="tab-pane fade" id="id3" role="tabpanel">Panel 3</div>
+    <div class="tab-pane fade" id="id4" role="tabpanel">Panel 4</div>
+    <div class="tab-pane fade" id="id5" role="tabpanel">Panel 5</div>
+  </div>
+
+  <script>
+    $('#firstNav a').click(e => {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+  </script>
+
+  <div class="container">
+   <center> <h2>{{ caption }}</h2></center>
+    <br>
+      
+        <form action="{% url 'solr:resultset' %}" method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <input type="queryBox" name="query" class="form-control" id="querytxt" placeholder="Enter Your Query">
+        
+        <br>
+          <center> <button type="submit" class="btn btn-default">Search</button></center>
+      </div>
+    </form>
+
+    <hr>
+
+
+
+    
+    
+  <div id="result"> <script  type="text/javascript" src="{% static 'js/result2.js' %}"></script> </div> 
+    
+  </div>
+  
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+
+<!--     <script  type="text/javascript" src="{% static 'js/result.js' %}"></script> -->
+     
+     
+      
+    
+    
+    
+</body>
+
+
+</html>

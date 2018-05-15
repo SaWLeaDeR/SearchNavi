@@ -1,0 +1,31 @@
+version: '3.2'
+services:
+    solr:
+        image: solr
+        ports:
+            - "8983:8983"
+        volumes:
+            - type: bind
+              source: /home/oem/Desktop/dockersolr/mycores
+              target: /opt/solr/server/solr/mycores
+        entrypoint:
+            - docker-entrypoint.sh
+            - solr-precreate
+            - searchnavi
+            
+      
+    db:
+        image: postgres
+    
+    web:
+        image: django_nltk:v2
+        command: python3 manage.py runserver 0:8000
+        volumes: 
+            - ./djangotf/:/code
+        ports: 
+            - "8000:8000"
+        restart: always
+        depends_on: 
+            - db
+volumes:
+  data:
